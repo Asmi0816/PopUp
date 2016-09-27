@@ -17,13 +17,7 @@ public class PopUpModel
 		this.decimal = 2342.234;
 	}
 	
-	public PopUpModel(int number, boolean compare, double decimal, String language)
-	{
-		this.number = 23;
-		this.compare = true;
-		this.decimal = 23.23;
-		this.language = "Munchy";
-	}
+	
 	
 	public String getLanguage()
 	{
@@ -41,8 +35,17 @@ public class PopUpModel
 	}
 	
 	public double getDecimal()
+
 	{
 		return decimal;
+	}
+	
+	public PopUpModel(int number, boolean compare, double decimal, String language)
+	{
+		this.number = 23;
+		this.compare = true;
+		this.decimal = 23.23;
+		this.language = "Munchy";
 	}
 	
 }
