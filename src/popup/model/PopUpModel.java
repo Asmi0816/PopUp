@@ -48,4 +48,28 @@ public class PopUpModel
 		this.language = "Munchy";
 	}
 	
+	public void setNumber(int number)
+	{
+		this.number = number;
+	}
+	
+	public void setCompare(boolean compare)
+	{
+		this.compare = compare;
+	}
+	
+	public void setDecimal(double decimal)
+	{
+		this.decimal = decimal;
+	}
+	
+	public void setLanguage(String language)
+	{
+		this.language = language;
+	}
+	
+	
+	
+	
+	
 }
