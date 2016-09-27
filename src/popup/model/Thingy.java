@@ -2,14 +2,14 @@ package popup.model;
 
 
 
-public class PopUpModel 
+public class Thingy 
 {
 	private String language;
 	private boolean compare;
 	private int number;
 	private double decimal;
 	
-	public PopUpModel()
+	public Thingy()
 	{
 		this.number = 234423;
 		this.compare = true;
@@ -18,7 +18,7 @@ public class PopUpModel
 	}
 	
 	
-	
+	//Getters---------------------------------------------------------------
 	public String getLanguage()
 	{
 		return language;
@@ -40,14 +40,7 @@ public class PopUpModel
 		return decimal;
 	}
 	
-	public PopUpModel(int number, boolean compare, double decimal, String language)
-	{
-		this.number = 23;
-		this.compare = true;
-		this.decimal = 23.23;
-		this.language = "Munchy";
-	}
-	
+	//Setters-----------------------------------------------------------------
 	public void setNumber(int number)
 	{
 		this.number = number;
