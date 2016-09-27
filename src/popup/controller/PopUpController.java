@@ -18,11 +18,12 @@ public class PopUpController
 	
 	{
 		int count = 0;
-		while(count < 10)
+		String answer = "sample";
+		while(!answer.equals(""))
 		{
 		display.displayMessage("Hello World!!!");
 		
-		String answer = display.collectResponse("What is your favorite Food?");
+		answer = display.collectResponse("What is your favorite Food?");
 		
 		count++;
 		}
