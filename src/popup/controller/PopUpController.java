@@ -17,15 +17,15 @@ public class PopUpController
 	public void start()
 	
 	{
-		int count = 0;
+		
 		String answer = "sample";
-		while(!answer.equals(""))
+		while(answer != null && !answer.equals(""))
 		{
 		display.displayMessage("Hello World!!!");
 		
 		answer = display.collectResponse("What is your favorite Food?");
 		
-		count++;
+		
 		}
 	}
 	
