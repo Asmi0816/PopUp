@@ -24,8 +24,9 @@ public class PopUpController
 		thingyList = new ArrayList<Thingy>();
 		
 	}
-	//Thing that creates the popups and tests them.
-	public void start()
+//the start call---------------------------------------------------------------------------------
+	
+		public void start()
 	
 	{
 		
@@ -33,7 +34,11 @@ public class PopUpController
 
 	
 	}
-
+		
+		
+//things we did with try catch-------------------------------------------------------------------
+		
+	//Thing that creates the popups and tests them.
 	private void askQuestionLoop()
 	
 	{
@@ -96,13 +101,29 @@ public class PopUpController
 		
 		
 	}
-
+	
+	
+//lists-------------------------------------------------------------------------------------------
+	
 	private void learnLists()
 	{
 		display.displayMessage("This is the size of the list: " + thingyList.size());
 		Thingy firstThingy = new Thingy();
 		thingyList.add(firstThingy);
+		
 		display.displayMessage("This is the size of the list: " + thingyList.size());
+		Thingy newThingy = new Thingy();
+		thingyList.add(newThingy);
+		
+		display.displayMessage("This is the size of the list: " + thingyList.size());
+		Thingy lastThingy = new Thingy();
+		thingyList.add(lastThingy);
+		
+		display.displayMessage("This is the size of the list: " + thingyList.size());
+		Thingy psychThingy = new Thingy();
+		thingyList.add(psychThingy);
+		
+		display.displayMessage("This will be my final Thingy! _____\\.=.|||||||: " + thingyList.size());
 	}
 	
 	
