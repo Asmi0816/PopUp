@@ -19,12 +19,11 @@ public class PopUpController
 	{
 		
 		String answer = "sample";
-		while(answer != null && !answer.equals(""))
+		
+		while(answer != null && !isDouble(answer))
 		{
-		display.displayMessage("Hello World!!!");
 		
-		answer = display.collectResponse("What is your favorite Food?");
-		
+			answer = display.collectResponse("What is your favorite Food?");
 		
 		}
 		
