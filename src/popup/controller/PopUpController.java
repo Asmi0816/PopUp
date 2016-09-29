@@ -1,23 +1,42 @@
 package popup.controller;
 
 import popup.view.PopUpViewer;
+import java.util.List;
+import popup.model.Thingy;
+import java.util.ArrayList;
+
 
 public class PopUpController 
 
 {
 	private PopUpViewer display;
 	
+	private  List<Thingy> thingyList;
+	
+	
+	
+	
+	
 	public PopUpController()
 	{
 		
 		display = new PopUpViewer();
+		thingyList = new ArrayList<Thingy>();
 		
 	}
-	
+	//Thing that creates the popups and tests them.
 	public void start()
 	
 	{
 		
+	learnLists();
+
+	
+	}
+
+	private void askQuestionLoop()
+	
+	{
 		String answer = "sample";
 		
 		while(answer != null && !isDouble(answer))
@@ -26,7 +45,6 @@ public class PopUpController
 			answer = display.collectResponse("What is your favorite Food?");
 		
 		}
-		
 	}
 	/**
 	 * Checks a supplied string value to see if it can be converted to a double.
@@ -78,4 +96,22 @@ public class PopUpController
 		
 		
 	}
+
+	private void learnLists()
+	{
+		display.displayMessage("This is the size of the list: " + thingyList.size());
+		Thingy firstThingy = new Thingy();
+		thingyList.add(firstThingy);
+		display.displayMessage("This is the size of the list: " + thingyList.size());
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
