@@ -9,16 +9,20 @@ public class Thingy
 	private int number;
 	private double decimal;
 	
+	
 	public Thingy()
 	{
 		this.number = 234423;
 		this.compare = true;
 		this.language = "wefn";
 		this.decimal = 2342.234;
+		
 	}
 	
 	
 	//Getters---------------------------------------------------------------
+	
+
 	public String getLanguage()
 	{
 		return language;
@@ -41,6 +45,8 @@ public class Thingy
 	}
 	
 	//Setters-----------------------------------------------------------------
+	
+	
 	public void setNumber(int number)
 	{
 		this.number = number;

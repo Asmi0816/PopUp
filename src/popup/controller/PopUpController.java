@@ -29,9 +29,9 @@ public class PopUpController
 		public void start()
 	
 	{
-		
+	
 	learnLists();
-    
+    askQuestionLoop();
 	
 	}
 		
@@ -48,7 +48,10 @@ public class PopUpController
 		{
 		
 			answer = display.collectResponse("What is your favorite Number?");
-		
+		    Thingy thingy = new Thingy();
+		    thingy.setLanguage(answer);
+		    thingyList.add(thingy);
+		    display.displayMessage("you added " + answer + "To the list");
 		}
 	}
 	/**
@@ -163,6 +166,17 @@ public class PopUpController
 		display.displayMessage("The size of the list just shrunk to: " + thingyList.size());
 		display.displayMessage("this is what's missing: " + old.getLanguage());
 		thingyList.add(0, old);
+		
+		//FreePlay----------------------------------------------------------------------------
+		
+
+		
+		
+		
+		
+		
+		
+		
 	}
 	
 	
