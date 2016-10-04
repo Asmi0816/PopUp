@@ -31,7 +31,7 @@ public class PopUpController
 	{
 		
 	learnLists();
-
+    askQuestionLoop();
 	
 	}
 		
@@ -47,7 +47,7 @@ public class PopUpController
 		while(answer != null && !isDouble(answer))
 		{
 		
-			answer = display.collectResponse("What is your favorite Food?");
+			answer = display.collectResponse("What is your favorite Number?");
 		
 		}
 	}
@@ -112,18 +112,12 @@ public class PopUpController
 		thingyList.add(firstThingy);
 		
 		display.displayMessage("This is the size of the list: " + thingyList.size());
-		Thingy newThingy = new Thingy();
-		thingyList.add(newThingy);
 		
-		display.displayMessage("This is the size of the list: " + thingyList.size());
-		Thingy lastThingy = new Thingy();
-		thingyList.add(lastThingy);
-		
-		display.displayMessage("This is the size of the list: " + thingyList.size());
-		Thingy psychThingy = new Thingy();
-		thingyList.add(psychThingy);
-		
-		display.displayMessage("This will be my final Thingy! _____\\.=.|||||||: " + thingyList.size());
+		for (int index = 0; index < 5; index++)
+		{
+			Thingy loopThingy = new Thingy();
+			thingyList.add(loopThingy);
+		}
 	}
 	
 	
