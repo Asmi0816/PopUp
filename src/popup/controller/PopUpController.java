@@ -144,6 +144,25 @@ public class PopUpController
 		{
 			display.displayMessage(thingyList.get(index).getLanguage());
 		}
+		
+		Thingy replacement = new Thingy();
+		replacement.setLanguage("Be assimilated");
+		
+		Thingy old = thingyList.set(0, replacement);
+		
+		for (int index =0; index < thingyList.size(); index++)
+		{
+			display.displayMessage(thingyList.get(index).getLanguage());
+		}
+		old.setLanguage("No chance for escape");
+		display.displayMessage(old.getLanguage());
+		
+		thingyList.remove(4);
+		display.displayMessage("The size of the list just shrunk to: " + thingyList.size());
+		old = thingyList.remove(4);
+		display.displayMessage("The size of the list just shrunk to: " + thingyList.size());
+		display.displayMessage("this is what's missing: " + old.getLanguage());
+		thingyList.add(0, old);
 	}
 	
 	
