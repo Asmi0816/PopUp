@@ -31,7 +31,7 @@ public class PopUpController
 	{
 		
 	learnLists();
-    askQuestionLoop();
+    
 	
 	}
 		
@@ -117,6 +117,32 @@ public class PopUpController
 		{
 			Thingy loopThingy = new Thingy();
 			thingyList.add(loopThingy);
+		}
+		
+		for	(int index = 0; index < thingyList.size(); index++)
+		{
+			display.displayMessage("The thingy at this spot has words of: " + thingyList.get(index).getLanguage());
+		}
+		
+		Thingy specialThingy = new Thingy();
+		specialThingy.setLanguage("Not null stuff.");
+		
+		thingyList.add(1, specialThingy);
+		
+		for (int index = 0; index < thingyList.size(); index++)
+		{
+			display.displayMessage("the message at " + index + " is " +thingyList.get(index).getLanguage());
+			
+		}
+		
+		
+		thingyList.get(3).setLanguage("I just put words in here XD");
+		Thingy tempThing = thingyList.get(4);
+		tempThing.setLanguage("Changed again");
+		
+		for (int index =0; index < thingyList.size(); index++)
+		{
+			display.displayMessage(thingyList.get(index).getLanguage());
 		}
 	}
 	
