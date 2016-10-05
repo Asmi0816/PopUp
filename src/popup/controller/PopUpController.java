@@ -51,7 +51,7 @@ public class PopUpController
 		    Thingy thingy = new Thingy();
 		    thingy.setLanguage(answer);
 		    thingyList.add(thingy);
-		    display.displayMessage("you added " + answer + "To the list");
+		    display.displayMessage("You added " + answer + " to the list");
 		}
 	}
 	/**
@@ -171,10 +171,21 @@ public class PopUpController
 		
 
 		
+		for (Thingy currentThingy : thingyList)
+		{
+			display.displayMessage("The current value is " + currentThingy.getLanguage());
+		}
 		
 		
+		for (Thingy currentThingy : thingyList)
+		{
+			currentThingy = new Thingy();
+		}
 		
-		
+		for (Thingy currentThingy : thingyList)
+		{
+			thingyList.remove(0);
+		}
 		
 		
 	}
